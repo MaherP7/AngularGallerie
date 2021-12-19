@@ -1,0 +1,27 @@
+<app-header></app-header>
+<div class="container-fluid h-100 m-0 p-0 " >
+    <div class="row m-0 p-0">
+        <div class="col d-flex justify-content-center " style="max-height: 45em;overflow: auto;">
+            <div class="shadow-sm bg-body m-0 p-0">
+                <img src="../../../assets/images/1getoffmars.jpeg" alt="Homme sur mars">
+                <hr>
+                <p>Bienvenus sur l'application Mars Gallery !<br><br>Vous etes passionnés par l'éspace ? Ici vous avez accès aux meilleures images<br>de mars prises par la Nasa,
+                    et vous pourrez créer une galerie des photos qui<br>vous ont le plus marqué.</p>
+                <div class="row text-center">
+                    <div class="col">
+                        <div class="card w-100 text-center"><img class="card-img-top" style="width:25em; height:auto" src="../../../assets/images/1getoffmars.jpeg" class="image1" alt="Homme sur mars"> <div class="card-body"><button class="btn btn-primary" (click)="versPhotoParJour();">Images de Mars par jour</button></div></div>
+                    </div>
+                    <div class="col">
+                        <div class="card w-100 text-center"><img class="card-img-top" style="width:25em; height:auto" src="../../../assets/images/1getoffmars.jpeg" class="image1" alt="Homme sur mars"> <div class="card-body"><button class="btn btn-primary"  (click)="versGalerie();">Galerie de mes meilleures photos</button></div></div>
+                    </div>
+                </div>
+                <hr>
+                <h1 class="text-center justify-content-center">Déscription de l'application</h1>
+                <p>
+                    Cette application a pour but d'afficher les images des rovers sur mars, grâce à l'api de la NASA trouvée à cette <a href="https://api.nasa.gov/" class="link-info">adresse</a>
+                </p>
+            </div>
+        </div>
+    </div>
+</div>
+<app-footer></app-footer>

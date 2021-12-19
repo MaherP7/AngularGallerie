@@ -1,0 +1,15 @@
+<app-header></app-header>
+<div class="50% bg-dark">
+    <div class="p-2 m-0 w-100 align-items-end">
+        <app-form-chercher-image></app-form-chercher-image>
+    </div>
+</div>
+<div class="container-fluid h-100 p-0" >
+    <div class="row m-0 p-0">
+        <h3 class="h3 muted m-0 m-auto text-center"> Photos du {{getDate()}} </h3>
+        <div class="shadow-sm bg-body m-0 m-auto p-0 overflow-hidden">
+            <app-list-images [listImages]="getPhotos()" [typeListe]="'jours'"></app-list-images>
+        </div>
+    </div>
+</div>
+<app-footer></app-footer>

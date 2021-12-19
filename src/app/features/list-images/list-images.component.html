@@ -1,0 +1,7 @@
+<div class="d-flex flex-wrap align-content-between justify-content-between gap-4" *ngIf="listImages?.length > 0" style="max-height:36em;overflow:auto;width:auto">
+    <app-list-images-item *ngFor="let images of listImages" [src]="images.img_src" [id]="images.id" [listType]="typeListe">
+    </app-list-images-item>
+</div>
+<div class="text-center card bg-danger m-2 text-light w-100" *ngIf="listImages?.length <= 0">
+    <h2 class="w-100">Aucune photo trouvé</h2>
+</div>

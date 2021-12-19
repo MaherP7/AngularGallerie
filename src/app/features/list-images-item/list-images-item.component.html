@@ -1,0 +1,7 @@
+<div class="card shadow-sm align-self-center" style="width: 18rem;">
+    <img [src]="src" [id]="id" class="card-img-bottom" alt="img" style="min-height: 18rem;"/>
+    <div class="card-body text-center">
+      <app-btn-ajouter-supp-fav typeBtn="Ajouter" *ngIf="listType === 'jours'" [currentObj]="getCurrObj()"></app-btn-ajouter-supp-fav>
+      <app-btn-ajouter-supp-fav typeBtn="Supprimer" *ngIf="listType === 'gallerie'" [currentObj]="getCurrObj()"></app-btn-ajouter-supp-fav>
+    </div>
+</div>

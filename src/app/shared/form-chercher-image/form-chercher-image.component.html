@@ -1,0 +1,8 @@
+<form class="form-check" #dateJour="ngForm" style="width: 18em;" (ngSubmit)="sendForm(dateJour.value)" >
+    <div class="input-group input-group-sm flex-nowrap w-100">
+      {{ dateEntree }}
+        <span class="input-group-text">Entrer une date</span>
+        <input type="date" name="dateJour" class="form-control" placeholder="jj/mm/aaaa" aria-label="today" aria-describedby="addon-wrapping" style="min-width: fit-content;" ngModel>
+        <input type="submit" class="btn btn-primary" value="Chercher"/>
+      </div>
+</form>
